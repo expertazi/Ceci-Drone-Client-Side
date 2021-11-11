@@ -130,7 +130,7 @@ const Register = () => {
           <Col md={4}></Col>
           <Col md={4}>
             <form onSubmit={handleRegistration}>
-              <h3 className="text-black mb-5">
+              <h3 className="text-black">
                 Please {isLogin ? "Login" : "Register"}
               </h3>
               {!isLogin && (
