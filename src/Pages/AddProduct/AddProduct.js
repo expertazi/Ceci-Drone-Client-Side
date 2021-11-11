@@ -13,13 +13,15 @@ const AddProduct = () => {
   const onSubmit = (data) => {
     data.email = user?.email;
     console.log(data.email);
-    axios.post("http://localhost:5000/products", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("New Product Added Succefully");
-        history.push("/explore");
-        reset();
-      }
-    });
+    axios
+      .post("https://nameless-retreat-72623.herokuapp.com/products", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("New Product Added Succefully");
+          history.push("/explore");
+          reset();
+        }
+      });
   };
   return (
     <div>

@@ -13,7 +13,7 @@ const MyOrder = () => {
 
   const handleUpdate = (id) => {
     const updateStatus = { status: "Shipped" };
-    const url = `http://localhost:5000/orders/${id}`;
+    const url = `https://nameless-retreat-72623.herokuapp.com/orders/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -26,7 +26,9 @@ const MyOrder = () => {
         console.log(data);
         if (data.modifiedCount) {
           alert("Update Succeflly");
-          fetch(`http://localhost:5000/orders/${user?.email}`)
+          fetch(
+            `https://nameless-retreat-72623.herokuapp.com/orders/${user?.email}`
+          )
             .then((res) => res.json())
             .then((data) => {
               setOrders(data);
@@ -40,7 +42,7 @@ const MyOrder = () => {
 
   const handleDeelete = (id) => {
     if (window.confirm("Are you sure you want To delete")) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://nameless-retreat-72623.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -60,7 +62,7 @@ const MyOrder = () => {
 
   useEffect(() => {
     console.log(user?.email);
-    fetch(`http://localhost:5000/orders/${user?.email}`)
+    fetch(`https://nameless-retreat-72623.herokuapp.com/orders/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);

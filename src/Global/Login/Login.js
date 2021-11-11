@@ -114,7 +114,7 @@ const Register = () => {
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
 
-    fetch("http://localhost:5000/users", {
+    fetch("https://nameless-retreat-72623.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",
