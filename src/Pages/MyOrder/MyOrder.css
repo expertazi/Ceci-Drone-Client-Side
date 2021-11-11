@@ -1,0 +1,10 @@
+.btn-global-color {
+  background-color: #000;
+  color: white;
+  height: 38px;
+  width: auto;
+}
+.btn-global-color:hover {
+  background-color: #d72323;
+  color: white;
+}

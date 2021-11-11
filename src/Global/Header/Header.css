@@ -1,0 +1,19 @@
+.main-menu {
+  text-align: center;
+}
+.main-menu a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 17px;
+  color: white;
+}
+
+.navbar-nav span {
+  color: white !important;
+}
+.navbar-nav a {
+  color: white !important;
+}
+.dropdown-menu {
+  background-color: #b0b0b0 !important;
+}
