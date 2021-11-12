@@ -1,15 +1,27 @@
 import React from "react";
 import { Card, Col, Button } from "react-bootstrap";
+import Rating from "react-rating";
 import { Link } from "react-router-dom";
 
 const Products = (props) => {
-  const { name, key, img, description, price } = props.product;
+  const { name, key, img, description, price, rating } = props.product;
   return (
     <Col md={3}>
       <Card>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <span className="fw-bold text-start h3">Prcie : {price}$</span>
+          <div className=" d-flex justify-content-between align-items-center">
+            <span>
+              <Rating
+                initialRating={rating}
+                emptySymbol="far fa-star"
+                fullSymbol="fas fa-star"
+                readonly
+              />
+            </span>
+            <span className="fw-bold text-start h3">Prcie : {price}$</span>
+          </div>
+
           <Card.Title className="mt-2">{name.slice(0, 25)}</Card.Title>
           <Card.Text>{description.slice(0, 94)}</Card.Text>
           <div className=" d-flex justify-content-between align-items-center">
