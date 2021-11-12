@@ -18,7 +18,7 @@ const ShowProducts = () => {
             Here is Our All Upcoming products
           </h2>
           <Row md={4} className="g-4 all-products">
-            {products.slice(0, 4).map((product) => (
+            {products.slice(0, 8).map((product) => (
               <Products product={product} key={product.key}></Products>
             ))}
           </Row>
