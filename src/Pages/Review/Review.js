@@ -30,9 +30,7 @@ const Review = () => {
 
           <Col md={8} className="mt-5 d-flex">
             <div className="add-reg-form">
-              <h2 className="text-center mb-3 fw-bold global-left">
-                Please Add A Review
-              </h2>
+              <h2 className="text-center mb-3 fw-bold">Please Add A Review</h2>
 
               <form onSubmit={handleSubmit(onSubmit)}>
                 <input

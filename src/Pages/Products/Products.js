@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Products = (props) => {
   const { name, key, img, description, price } = props.product;
   return (
-    <Col>
-      <Card style={{ width: "18rem" }}>
+    <Col md={3}>
+      <Card>
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <span className="fw-bold text-start h3">Prcie : {price}$</span>

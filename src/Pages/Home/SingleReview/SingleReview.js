@@ -5,8 +5,8 @@ import Rating from "react-rating";
 const SingleReview = (props) => {
   const { name, _id, comment, rating, email } = props.product;
   return (
-    <Col>
-      <Card style={{ width: "18rem" }}>
+    <Col md={3}>
+      <Card>
         <Card.Body>
           <Card.Title className="mt-2">{name.slice(0, 25)}</Card.Title>
           <Card.Text>{comment.slice(0, 94)}</Card.Text>

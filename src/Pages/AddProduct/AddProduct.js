@@ -31,7 +31,7 @@ const AddProduct = () => {
 
           <Col md={8} className="mt-5 d-flex">
             <div className="add-reg-form">
-              <h2 className="text-center mb-3 fw-bold global-left">
+              <h2 className="text-center mb-3 fw-bold">
                 Please Add A New Product
               </h2>
 

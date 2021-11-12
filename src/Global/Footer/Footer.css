@@ -19,3 +19,8 @@
   list-style: none;
   margin-bottom: 9px;
 }
+@media only screen and (max-width: 600px) {
+  .main-footer-ul {
+    padding-left: 0 !important;
+  }
+}
