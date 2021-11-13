@@ -34,28 +34,35 @@ const Header = () => {
 
                     {admin ? (
                       <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/manageAllPorducts">
-                          Manage All Orders
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/addProduct">
-                          Add Product
-                        </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/makeAdmin">
+                        <Dropdown.Item as={Link} to="/dashboard/makeAdmin">
                           Make Admin
                         </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/manageProducts">
+                        <Dropdown.Item as={Link} to="/dashboard/allUsers">
+                          All Users
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/dashboard/addProduct">
+                          Add Product
+                        </Dropdown.Item>
+
+                        <Dropdown.Item as={Link} to="/dashboard/manageProducts">
                           Manage Products
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          as={Link}
+                          to="/dashboard/manageAllOrders"
+                        >
+                          Manage All Orders
                         </Dropdown.Item>
                       </Dropdown.Menu>
                     ) : (
                       <Dropdown.Menu>
-                        <Dropdown.Item as={Link} to="/pay">
+                        <Dropdown.Item as={Link} to="/dashboard/pay">
                           Pay
                         </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/myOrder">
+                        <Dropdown.Item as={Link} to="/dashboard/myOrder">
                           My Order
                         </Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/review">
+                        <Dropdown.Item as={Link} to="/dashboard/review">
                           Review
                         </Dropdown.Item>
                       </Dropdown.Menu>

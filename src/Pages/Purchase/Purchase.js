@@ -34,7 +34,7 @@ const Purchase = () => {
       .then((res) => {
         if (res.data.insertedId) {
           alert("Registration Succefull");
-          history.push("/myOrder");
+          history.push("/dashboard/myOrder");
           reset();
         }
       });

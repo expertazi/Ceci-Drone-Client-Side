@@ -42,6 +42,7 @@ const MakeAdmin = () => {
           <Col className="my-5" md={4}>
             <Form onSubmit={handleAdminSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
+                <p>Make Sure Your account create succefully</p>
                 <h2>Make a Admin</h2>
                 <Form.Control
                   type="email"

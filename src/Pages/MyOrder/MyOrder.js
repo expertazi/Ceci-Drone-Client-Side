@@ -71,7 +71,7 @@ const MyOrder = () => {
   }, [user.email]);
 
   return (
-    <div className=" my-5">
+    <div className=" my-5 extra-margin-buttom">
       <h2 className="text-center pb-3">My All Orders :{orders.length}</h2>
       <Table striped bordered hover>
         <thead>

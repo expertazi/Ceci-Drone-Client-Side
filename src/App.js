@@ -19,6 +19,8 @@ import AdminRoute from "./Global/Login/AdminRoute/AdminRoute";
 import AddProduct from "./Pages/AddProduct/AddProduct.js";
 import ManageAllPorducts from "./Pages/ManageAllPorducts/ManageAllPorducts";
 import ManageProducts from "./Pages/ManageProducts/ManageProducts";
+import Dashboard from "./Global/Dashboard/Dashboard";
+import AllUsers from "./Pages/AllUsers/AllUsers";
 
 function App() {
   return (
@@ -36,6 +38,9 @@ function App() {
             <Route path="/explore">
               <Explore></Explore>
             </Route>
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
             <PrivateRoute exact path="/purchase/:purchase">
               <Purchase></Purchase>
             </PrivateRoute>
@@ -50,6 +55,9 @@ function App() {
             </PrivateRoute>
             <AdminRoute exact path="/manageAllPorducts">
               <ManageAllPorducts></ManageAllPorducts>
+            </AdminRoute>
+            <AdminRoute exact path="/allUsers">
+              <AllUsers></AllUsers>
             </AdminRoute>
             <AdminRoute exact path="/makeAdmin">
               <MakeAdmin></MakeAdmin>

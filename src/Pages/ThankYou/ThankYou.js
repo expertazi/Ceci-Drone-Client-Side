@@ -20,7 +20,7 @@ const ThankYou = () => {
                 Go Back Home
               </button>
             </Link>
-            <Link to="/makeAdmin">
+            <Link to="dashboard/makeAdmin">
               <button className="btn btn-global-color mb-5">
                 Make a Admin
               </button>
