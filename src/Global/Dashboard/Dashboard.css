@@ -4,9 +4,16 @@
 .css-1d9c4l9-MuiDrawer-docked .MuiDrawer-paper {
   margin-top: 100px !important;
 }
+
+.css-1l8j5k8 {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
 .css-0 {
   margin-top: 15px !important;
   margin-bottom: 5px !important;
+  background: #fff;
+  border: none;
+  margin-top: 100px !important;
 }
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
   height: auto !important;
