@@ -21,7 +21,6 @@ import ManageAllPorducts from "./Pages/ManageAllPorducts/ManageAllPorducts";
 import ManageProducts from "./Pages/ManageProducts/ManageProducts";
 import Dashboard from "./Global/Dashboard/Dashboard";
 import AllUsers from "./Pages/AllUsers/AllUsers";
-import Dashbordhome from "./Global/Dashboard/Dashbordhome/Dashbordhome";
 
 function App() {
   return (
@@ -40,7 +39,7 @@ function App() {
               <Explore></Explore>
             </Route>
             <PrivateRoute path="/dashboard">
-              <Dashbordhome></Dashbordhome>
+              <Dashboard></Dashboard>
             </PrivateRoute>
             <PrivateRoute exact path="/purchase/:purchase">
               <Purchase></Purchase>
